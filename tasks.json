@@ -1,0 +1,30 @@
+{
+    "tasks": [
+		{
+            "type": "cppbuild",
+            "label": "cbuild",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}/Get_next_line/get_next_line.c", 
+                "${workspaceFolder}/Get_next_line/get_next_line_utils.c",
+                "${workspaceFolder}/Get_next_line/get_next_line.h",
+                "${workspaceFolder}/my_tests/gnl_main.c",
+                "-D BUFFER_SIZE=200"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/Get_next_line/"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "my task"
+        }
+    ],
+    "version": "2.0.0"
+}

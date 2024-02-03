@@ -1,0 +1,35 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		
+		
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Cargo launch",
+            "cargo": {
+                "args": [
+                    "${workspaceFolder}/Get_next_line/get_next_line.c", 
+                	"${workspaceFolder}/Get_next_line/get_next_line_utils.c",
+                	"${workspaceFolder}/Get_next_line/get_next_line.h",
+					"-D BUFFER_SIZE=200"
+                		]
+            },
+            "args": []
+        },
+
+		{
+			"type": "lldb",
+			"request": "launch",
+			"name": "Launch a.out",
+			"program": "${workspaceFolder}/Get_next_line/a.out",
+			"args": [],
+			"cwd": "${workspaceFolder}/Get_next_line/",
+			"preLaunchTask": "cbuild",
+		}
+
+	]
+}
