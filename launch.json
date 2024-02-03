@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "configurations": [
+        {
+            "name": "Push swap",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Push_swap/push_swap",
+            "args": ["1 2 3"], // Arguments to pass
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/Push_swap",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build"
+        }
+    ]
+}
